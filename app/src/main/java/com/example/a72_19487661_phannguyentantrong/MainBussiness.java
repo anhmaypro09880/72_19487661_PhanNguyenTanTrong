@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -15,9 +18,11 @@ import java.util.Calendar;
 import java.util.List;
 
 public class MainBussiness extends AppCompatActivity {
-    DataBussiness dataBussiness;
-    Button btnThem;
+    public static DataBussiness dataBussiness;
+    Button btnThem,btnCl;
     EditText edtTenCv,edtMucDo;
+    FirebaseDatabase test = FirebaseDatabase.getInstance();
+    DatabaseReference data = test.getReference("CongViec");
     List<Bussiness> list = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,22 @@ public class MainBussiness extends AppCompatActivity {
 //        dataBussiness.addBussiness(new Bussiness("1","test1","test1"));
         list = dataBussiness.getAll();
         themCongViec();
+        addToClound();
+    }
+
+    private void addToClound() {
+        btnCl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String ten = edtTenCv.getText().toString();
+                String soTien = edtMucDo.getText().toString();
+                DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
+                String date = df.format(Calendar.getInstance().getTime());
+                Bussiness acc = new Bussiness(ten,soTien,date);
+                String pathObject = String.valueOf(acc.getTenCongViec());
+                data.child(pathObject).setValue(acc);
+            }
+        });
     }
 
     private void themCongViec() {
@@ -45,8 +66,10 @@ public class MainBussiness extends AppCompatActivity {
     }
 
     private void khaiBao() {
-        btnThem  = findViewById(R.id.btnThem);
+        btnThem  = findViewById(R.id.btnThemCongV);
+        btnCl  = findViewById(R.id.btnCl);
         edtMucDo  = findViewById(R.id.edtMucDo);
         edtTenCv  = findViewById(R.id.edtTenCongV);
+
     }
 }

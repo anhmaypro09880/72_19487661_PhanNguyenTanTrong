@@ -98,12 +98,23 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnThem"
+        android:id="@+id/btnThemCongV"
         android:layout_width="221dp"
         android:layout_height="51dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="260dp"
         android:background="@drawable/color_button"
         android:text="Thêm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnCl"
+        android:layout_width="221dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/color_button"
+        android:text="Save to Clound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

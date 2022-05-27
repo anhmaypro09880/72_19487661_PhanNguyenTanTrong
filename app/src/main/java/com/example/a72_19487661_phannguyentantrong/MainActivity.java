@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Toast.makeText(MainActivity.this,"Thanh Cong",Toast.LENGTH_LONG).show();
 
-                        Intent i = new Intent(MainActivity.this,MainBussiness.class);
+                        Intent i = new Intent(MainActivity.this,MainTrungGian.class);
                         startActivity(i);
                     }
                 });
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void khaiBao() {
-        btnLogin = findViewById(R.id.btnThem);
+        btnLogin = findViewById(R.id.btnThemCongV);
         edtEmail = findViewById(R.id.edtTenCongV);
         edtPass = findViewById(R.id.edtMucDo);
 

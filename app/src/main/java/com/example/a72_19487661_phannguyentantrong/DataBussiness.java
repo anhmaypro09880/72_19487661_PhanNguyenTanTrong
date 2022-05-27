@@ -29,6 +29,24 @@ public class DataBussiness extends SQLiteOpenHelper {
         values.put("thoiGian",t.getThoiGian());
         db.insert("Bussiness",null,values);
     }
+//    public List<Bussiness> getAll(){
+//        List<Bussiness> list = new ArrayList<>();
+//        String sql = "Select * From Bussiness";
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        Cursor cursor = db.rawQuery(sql,null);
+//        if(cursor.moveToFirst()){
+//            do{
+//                Bussiness user = new Bussiness();
+//                user.setTenCongViec(cursor.getString(0));
+//                user.setMucDo(cursor.getString(1));
+//                user.setThoiGian(cursor.getString(2));
+//                list.add(user);
+//            }while (cursor.moveToNext());
+//        }
+//        cursor.close();
+//        db.close();
+//        return list;
+//    }
     public List<Bussiness> getAll(){
         List<Bussiness> list = new ArrayList<>();
         String sql = "Select * From Bussiness";
@@ -40,6 +58,7 @@ public class DataBussiness extends SQLiteOpenHelper {
                 user.setTenCongViec(cursor.getString(0));
                 user.setMucDo(cursor.getString(1));
                 user.setThoiGian(cursor.getString(2));
+
                 list.add(user);
             }while (cursor.moveToNext());
         }

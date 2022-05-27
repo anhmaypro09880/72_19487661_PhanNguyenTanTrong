@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.72_19487661_PhanNguyenTanTrong">
         <activity
+            android:name=".MainTrungGian"
+            android:exported="false" />
+        <activity
+            android:name=".MainThongKe"
+            android:exported="false" />
+        <activity
             android:name=".MainBussiness"
             android:exported="false" />
         <activity

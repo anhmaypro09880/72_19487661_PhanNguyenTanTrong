@@ -98,7 +98,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnThem"
+        android:id="@+id/btnThemCongV"
         android:layout_width="221dp"
         android:layout_height="51dp"
         android:layout_marginTop="276dp"
