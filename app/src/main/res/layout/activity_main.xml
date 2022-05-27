@@ -36,7 +36,7 @@
         <!--INPUT-->
 
         <EditText
-            android:id="@+id/edtEmail"
+            android:id="@+id/edtTenCongV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80px"
@@ -72,7 +72,7 @@
         <!--INPUT-->
 
         <EditText
-            android:id="@+id/edtPass"
+            android:id="@+id/edtMucDo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80px"
@@ -98,7 +98,7 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnThem"
         android:layout_width="221dp"
         android:layout_height="51dp"
         android:layout_marginTop="276dp"

@@ -3,6 +3,7 @@ package com.example.a72_19487661_phannguyentantrong;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         khaiBao();
         dangNhap();
     }
@@ -39,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Toast.makeText(MainActivity.this,"Thanh Cong",Toast.LENGTH_LONG).show();
 
-//                        Intent i = new Intent(MainActivity.this,MainThuChi.class);
-//                        startActivity(i);
+                        Intent i = new Intent(MainActivity.this,MainBussiness.class);
+                        startActivity(i);
                     }
                 });
 
@@ -49,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void khaiBao() {
-        btnLogin = findViewById(R.id.btnLogin);
-        edtEmail = findViewById(R.id.edtEmail);
-        edtPass = findViewById(R.id.edtPass);
+        btnLogin = findViewById(R.id.btnThem);
+        edtEmail = findViewById(R.id.edtTenCongV);
+        edtPass = findViewById(R.id.edtMucDo);
 
     }
 }
