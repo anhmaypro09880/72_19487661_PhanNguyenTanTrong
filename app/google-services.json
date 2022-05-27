@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503954473765",
+    "project_id": "baithicuoiky-241db",
+    "storage_bucket": "baithicuoiky-241db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503954473765:android:d27b6c67b5e48686b9d0cc",
+        "android_client_info": {
+          "package_name": "com.example.a72_19487661_phannguyentantrong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503954473765-ou4881putcd3n3kcbuph1usf4k58b4hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXaDZdofXnb6ElnQpgMknzBqBMF2hLC3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503954473765-ou4881putcd3n3kcbuph1usf4k58b4hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
