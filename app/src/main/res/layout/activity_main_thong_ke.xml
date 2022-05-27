@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainThongKe">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="329dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--INPUT-->
+
+        <EditText
+            android:id="@+id/edtTenCongV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:background="@android:color/transparent"
+
+            android:hint="Nhập tháng năm"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <ImageView
+            android:id="@+id/usernam"
+            android:layout_width="25.7dp"
+            android:layout_height="21.3dp"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:src="@drawable/email" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvThongKe"
+        android:layout_width="409dp"
+        android:layout_height="658dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
