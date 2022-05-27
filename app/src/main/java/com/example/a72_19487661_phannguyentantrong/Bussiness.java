@@ -1,25 +1,25 @@
 package com.example.a72_19487661_phannguyentantrong;
 
 public class Bussiness {
-    private String tenCongViec;
+    private String tenCv;
     private String mucDo;
     private String thoiGian;
 
     public Bussiness() {
     }
 
-    public Bussiness(String tenCongViec, String mucDo, String thoiGian) {
-        this.tenCongViec = tenCongViec;
+    public Bussiness(String tenCv, String mucDo, String thoiGian) {
+        this.tenCv = tenCv;
         this.mucDo = mucDo;
         this.thoiGian = thoiGian;
     }
 
-    public String getTenCongViec() {
-        return tenCongViec;
+    public String getTenCv() {
+        return tenCv;
     }
 
-    public void setTenCongViec(String tenCongViec) {
-        this.tenCongViec = tenCongViec;
+    public void setTenCv(String tenCv) {
+        this.tenCv = tenCv;
     }
 
     public String getMucDo() {

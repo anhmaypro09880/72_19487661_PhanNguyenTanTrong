@@ -45,7 +45,7 @@ public class MainBussiness extends AppCompatActivity {
                 DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
                 String date = df.format(Calendar.getInstance().getTime());
                 Bussiness acc = new Bussiness(ten,soTien,date);
-                String pathObject = String.valueOf(acc.getTenCongViec());
+                String pathObject = String.valueOf(acc.getTenCv());
                 data.child(pathObject).setValue(acc);
             }
         });

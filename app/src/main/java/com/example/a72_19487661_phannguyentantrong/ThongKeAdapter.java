@@ -43,7 +43,7 @@ public class ThongKeAdapter extends BaseAdapter {
         TextView txtMucDo = view.findViewById(R.id.txtMucDo);
         TextView txtThoiGian = view.findViewById(R.id.txtThoiGian);
 
-        txtTencv.setText(list.get(i).getTenCongViec());
+        txtTencv.setText(list.get(i).getTenCv());
         txtMucDo.setText(list.get(i).getMucDo());
         txtThoiGian.setText(list.get(i).getThoiGian());
 

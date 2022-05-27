@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class MainThongKe extends AppCompatActivity {
@@ -21,11 +22,12 @@ public class MainThongKe extends AppCompatActivity {
 
         adt = new ThongKeAdapter(this,R.layout.listview_thongke,list);
         lvThongKe.setAdapter(adt);
-        dataBussiness.getAll();
+        list = dataBussiness.getAll();
     }
 
     private void khaiBao() {
         lvThongKe = findViewById(R.id.lvThongKe);
     }
+
 
 }
